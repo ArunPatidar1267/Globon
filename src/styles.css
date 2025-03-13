@@ -1,0 +1,459 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Arvo", serif;
+    color: black;
+}
+
+body {
+    /* background-color: 26452D; */
+    background-color: #e4ffba5c;
+
+}
+
+/* Navbar Styles */
+.navebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background-color: lightgreen;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .rightnav img {
+    top: 0em;
+    height: 3rem;
+  }
+  
+  .leftnav {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .leftnav li {
+    padding: 4px;
+    cursor: pointer;
+  }
+  
+  .leftnav li a {
+    text-decoration: none;
+    color: black;
+  }
+  #Profile{
+    position: relative;
+    top: 14em;
+    left: 28px;
+    border: 3px solid #ff2121;
+    width: 30px;
+    border-radius: 22em;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .leftnav li:hover {
+    background-color: green;
+    padding: 3px;
+    margin: 5px;
+    width: 5em;
+    padding-inline: 15px;
+    border-radius: 27px 0px;
+    color: rgb(11, 11, 11);
+    transition: 0.7s ease-out;
+  }
+  
+ 
+  
+  /* Toggle Button Styles */
+  .menu-btn {
+    display: none; /* Hide by default on larger screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Sidebar Styles for Computers/Laptops */
+  @media (min-width: 769px) {
+    .leftnav {
+      position: fixed;
+      top: 48px;
+      right: -10em;
+      height: 84vh;
+      width: 4em;
+      background-color: lightgreen;
+      flex-direction: column;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      /* transition: left 0.3s ease; */
+      transition: right 0.9s ease;
+
+    }
+  
+    .leftnav.open {
+
+      /*left: 0; /* Show sidebar when open */
+      right: 0;
+    }
+  
+    .menu-btn {
+      display: block; /* Show toggle button on computers/laptops */
+    }
+  }
+  
+  /* Responsive Styles for Mobile */
+ 
+  
+  
+
+
+
+
+
+.homepage {
+
+    height: 90vh;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.righthome {
+    /* border: 2px solid red; */
+    padding: 10px;
+    position: relative;
+    top: 27rem;
+    left: 8rem;
+    height: 55px;
+    width: 44rem;
+    font-size: 60px;
+
+}
+
+.righthome h1 {
+    color: green;
+
+}
+
+.righthome p {
+    /* color: #fff; */
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .015em;
+    font-size: 35px;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+.righthome2{
+    text-align: justify;
+    font-size: 22px;
+    padding: 10px;
+    position: relative;
+    top: -19rem;
+    left: -0.5rem;
+    height: 11rem;
+    width: 32rem;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+.lefthome {
+    /* border: 5px solid black; */
+    width: 35rem;
+    height: 25rem;
+    position: relative;
+    top: 8rem;
+    left: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.icon{
+    animation: spin 10s linear infinite;
+}
+@keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg);
+    }
+  }
+
+.lefthome img {
+    /* width: 24rem;
+    height: 24rem; */
+    border-radius: 310px;
+    animation: glob 5s linear infinite;
+
+}
+
+@keyframes glob {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.featurcontain {
+    /* border: 5px solid blueviolet; */
+    width: 80%;
+    height: 82%;
+    position: relative;
+    top: 2em;
+    left: 10em;
+}
+
+.topfeatur {
+    border: 5px solid #51780e;
+    position: relative;
+    width: 42%;
+    left: 25%;
+    padding: 18px;
+    background-color: #a8cc71;
+    color: white;
+    border-radius: 9px 113px;
+}
+
+
+
+
+.topfeatur p {
+    font-size: 26px;
+    margin-left: 3em;
+    font-weight: bold;
+}
+
+.topfeatur h3 {
+    text-align: center;
+    /* margin: 8px; */
+    padding: 0px 23px;
+    font-size: 15px;
+    font-weight: 100;
+
+}
+
+.otherfeatur {
+    /* border: 2px solid; */
+    height: 72%;
+    display: grid;
+    grid: 155px / auto auto auto;
+    position: relative;
+    top: 42px;
+
+}
+
+.Allfeatur {
+
+    border: 5px solid #51780e;
+    border-radius: 3em;
+    width: 21em;
+    height: 133px;
+    padding: 2% 5%;
+
+
+
+}
+
+.Allfeatur:hover {
+    transition: 1s ease-in-out;
+    border-radius: 113px 9px;
+    background-color: #a8cc71;
+    border: 5px dashed #51780e;
+
+}
+
+.Allfeatur p {
+    margin-left: 0em;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bottum3featur {
+
+    position: relative;
+    top: 20%;
+}
+
+.about {
+
+    height: 90vh;
+    border: 1px solid black;
+    display: flex;
+
+}
+
+.ContactUs {
+
+    height: 90vh;
+    border: 1px solid rgb(14, 13, 13);
+    background-color: #56c256;
+    /* display: flex; */
+
+}
+
+.contact {
+    /* border: 5px solid black; */
+    border-radius: 28px;
+    background-color: #78cf9b;
+    /* box-shadow: #66BB6A 1px 1px 18px 8px; */
+    display: block;
+    position: relative;
+    top: 56px;
+    left: 29em;
+    width: 45em;
+    height: 30em;
+
+}
+
+.contact:hover {
+    box-shadow: #66BB6A 1px 1px 18px 8px;
+    border: none;
+
+}
+
+/* form { */
+    /* display: flex; */
+/* } */
+
+.ContactUs form input {
+    margin: 8px 31px;
+    font-size: 16px;
+    padding: 3px 15px;
+    width: 38em;
+    height: 2em;
+    background-color: #0000001c;
+    border: none;
+    border-radius: 9px;
+}
+
+
+.ContactUs form textarea {
+    position: absolute;
+    top: 12em;
+    left: 0.3em;
+    width: 48em;
+    height: 19em;
+    margin: 18px 25px;
+    padding: 5px;
+    background-color: #0000001c;
+    border: none;
+    border-radius: 9px;
+}
+
+
+.down {
+    position: relative;
+    left: 17em;
+    top: 5em;
+    width: 25em;
+    height: 31em;
+    display: flex;
+
+}
+
+.lod {
+    border-radius: 5px;
+    position: absolute;
+    top: 8em;
+    left: 3em;
+    width: 10em;
+    height: 12em;
+}
+
+.lod img {
+    border-radius: 91px;
+    position: relative;
+    top: 0.5em;
+    left: 0.5em;
+    width: 9em;
+    animation: lodarrow 5s linear infinite;
+
+}
+
+@keyframes lodarrow {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.leftdown {
+    height: 29px;
+    position: relative;
+    top: 18em;
+    left: 18em;
+}
+
+.leftdown button {
+    width: 32em;
+    height: 4em;
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: #55ff2f;
+}
+
+
+
+
+
+footer {
+    color: rgb(176, 172, 172);
+    background-color: rgb(44, 43, 43);
+    text-align: center;
+}
+
+.footer {
+    /* border: 1px solid red; */
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    list-style: none;
+    text-align: justify;
+}

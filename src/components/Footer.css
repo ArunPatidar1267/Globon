@@ -1,0 +1,74 @@
+/* Footer.css */
+.footer {
+  background-color: #a0a0a0;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 97.4vw;
+  height: 10em;
+  position: relative;
+  left: -6px;
+  top: 7px;
+}
+
+.footer h1 {
+  font-size: 62px;
+  font-weight: bold;
+  margin: 0;
+  filter: drop-shadow(3px 0px 3px black);
+  border: dashed 2px;
+  border-radius: 5em;
+  width: 6em;
+  height: 1em;
+  position: relative;
+  top: 1em;
+  backdrop-filter: sepia(1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+  height: 8em;
+  width: 20em;
+}
+
+.footer-nav div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 140px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 3px 0;
+  font-size: 20px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 19px;
+  color: #724141;
+  font-weight: bold;
+  height: 1em;
+  width: 31em;
+  position: absolute;
+  top: 9em;
+  left: 27em;
+}

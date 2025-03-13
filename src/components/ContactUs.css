@@ -1,0 +1,89 @@
+/* Services.css */
+body {
+    background-color: #26452d;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .top-container {
+    position: relative;
+    top: -17em;
+    left: 34em;
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    color: #c07c4b;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .left-form-box {
+    background-color: #7ed957;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    color: black;
+    position: relative;
+    left: -17em;
+    top: 4em;
+    width: 35em;
+    height: 27em;
+  }
+  
+  .left-form-box h3 {
+    position: relative;
+    left: 8em;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    width: 5em;
+    margin-bottom: 1em;
+  }
+  
+  .left-form-box input {
+    width: 90%;
+    padding: 8px;
+    margin: 14px 0;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .left-form-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8b5a2b;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2em;
+  }
+  
+  .right-carbon-counter {
+    background-color: #7ed957;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 5px outset #e4ff00;
+  }
