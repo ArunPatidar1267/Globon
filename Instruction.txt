@@ -1,0 +1,4 @@
+1. Install Node.js
+2. Open terminal 
+3. npm i
+4. npm run dev 
