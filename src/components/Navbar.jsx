@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X, User } from "lucide-react"; // Import User icon for the profile
 import logo from "./img/Globon-logo.png"; // Import the logo image
-// import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to manage sidebar visibility
@@ -14,7 +14,10 @@ const Navbar = () => {
     <nav className="navebar">
       <div className="rightnav">
         {/* Logo */}
+        <Link to="/">
         <img src={logo} alt="Globon Logo" />
+        </Link>
+        
       </div>
 
       {/* Toggle Button */}
@@ -23,15 +26,15 @@ const Navbar = () => {
       </button>
 
       {/* Sidebar */}
-      <div className={`leftnav ${isOpen ? "open" : ""}`}>
+      <div className={`leftnav ${isOpen ? "open" : ""}`} onMouseLeave={toggleSidebar}>
         <li className="Home" id="Home">
-          <a href="/">Home</a> {/* Use Link for navigation */}
+          <Link to="/">Home</Link> {/* Use Link for navigation */}
         </li>
         <li className="Home" id="Srvices">
-          <a href="/CalculateCarbonEmissions">Services</a> {/* Use Link for navigation */}
+          <Link to="/CalculateCarbonEmissions">Services</Link> {/* Use Link for navigation */}
         </li>
         <li className="Home" id="ContactUs">
-          <a href="/contact">Contact</a> {/* Use Link for navigation */}
+          <Link to="/contact">Contact</Link> {/* Use Link for navigation */}
         </li>
         <li className="Home" id="About">
           <a href="/about">About</a> {/* Use Link for navigation */}

@@ -1,6 +1,5 @@
 import React from "react";
 import "./CalculateCarbonEmissions.css"; // Import the CSS file for styling
-import ElectronicCarbonEmissionsCalculator from "./ElectronicCarbonEmissionsCalculator"
 
 const CalculateCarbonEmissions = () => {
   const goBack = () => {
@@ -30,7 +29,6 @@ const CalculateCarbonEmissions = () => {
       </div>
     </div>
 
-    <ElectronicCarbonEmissionsCalculator />
     
     </>
   );

@@ -2,17 +2,26 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import ContactUs from "./components/ContactUs";
+import CalculateCarbonEmissions from "./components/CalculateCarbonEmissions";
 // import Features from "./components/Features";
 import Footer from "./components/Footer";
 import "./styles.css";
+import { Route, Routes } from "react-router-dom";
+
+
 
 function App() {
+
+
+  
   return (
     <div className="App">
       <Navbar />
-      <Home />
-      <ContactUs />
-      {/* <Features /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/CalculateCarbonEmissions" element={<CalculateCarbonEmissions />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
       <Footer />
     </div>
   );

@@ -8,7 +8,7 @@
 body {
     /* background-color: 26452D; */
     background-color: #e4ffba5c;
-
+  
 }
 
 /* Navbar Styles */
@@ -20,6 +20,7 @@ body {
     background-color: lightgreen;
     padding: 10px 20px;
     position: relative;
+    z-index: 1;
   }
   
   .rightnav img {
