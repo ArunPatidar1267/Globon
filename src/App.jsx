@@ -7,6 +7,8 @@ import CalculateCarbonEmissions from "./components/CalculateCarbonEmissions";
 import Footer from "./components/Footer";
 import "./styles.css";
 import { Route, Routes } from "react-router-dom";
+import ElectronicCarbonEmissionsCalculator from "./components/ElectronicCarbonEmissionsCalculator";
+
 
 
 
@@ -21,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/CalculateCarbonEmissions" element={<CalculateCarbonEmissions />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="ElectronicCarbonEmissionsCalculator" element={<ElectronicCarbonEmissionsCalculator />} />
       </Routes>
       <Footer />
     </div>
